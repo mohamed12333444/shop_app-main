@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 import '../constants/app_colors.dart';
 
 class AppTheme {
@@ -19,38 +18,38 @@ class AppTheme {
         onSecondary: Colors.white,
         onSurface: AppColors.textPrimary,
       ),
-      textTheme: GoogleFonts.outfitTextTheme(ThemeData.dark().textTheme).copyWith(
-        displayLarge: GoogleFonts.outfit(
+      textTheme: ThemeData.dark().textTheme.copyWith(
+        displayLarge: const TextStyle(
           color: AppColors.textPrimary,
           fontSize: 32,
           fontWeight: FontWeight.w700,
         ),
-        displayMedium: GoogleFonts.outfit(
+        displayMedium: const TextStyle(
           color: AppColors.textPrimary,
           fontSize: 26,
           fontWeight: FontWeight.w600,
         ),
-        titleLarge: GoogleFonts.outfit(
+        titleLarge: const TextStyle(
           color: AppColors.textPrimary,
           fontSize: 20,
           fontWeight: FontWeight.w600,
         ),
-        titleMedium: GoogleFonts.outfit(
+        titleMedium: const TextStyle(
           color: AppColors.textPrimary,
           fontSize: 16,
           fontWeight: FontWeight.w500,
         ),
-        bodyLarge: GoogleFonts.outfit(
+        bodyLarge: const TextStyle(
           color: AppColors.textPrimary,
           fontSize: 15,
           fontWeight: FontWeight.w400,
         ),
-        bodyMedium: GoogleFonts.outfit(
+        bodyMedium: const TextStyle(
           color: AppColors.textSecondary,
           fontSize: 13,
           fontWeight: FontWeight.w400,
         ),
-        labelLarge: GoogleFonts.outfit(
+        labelLarge: const TextStyle(
           color: Colors.white,
           fontSize: 15,
           fontWeight: FontWeight.w600,
@@ -61,7 +60,7 @@ class AppTheme {
         backgroundColor: AppColors.background,
         elevation: 0,
         centerTitle: false,
-        titleTextStyle: GoogleFonts.outfit(
+        titleTextStyle: const TextStyle(
           color: AppColors.textPrimary,
           fontSize: 22,
           fontWeight: FontWeight.w700,
@@ -84,7 +83,7 @@ class AppTheme {
             borderRadius: BorderRadius.circular(14),
           ),
           padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 16),
-          textStyle: GoogleFonts.outfit(
+          textStyle: const TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.w600,
           ),
@@ -97,7 +96,7 @@ class AppTheme {
           borderRadius: BorderRadius.circular(12),
           borderSide: BorderSide.none,
         ),
-        hintStyle: GoogleFonts.outfit(
+        hintStyle: const TextStyle(
           color: AppColors.textMuted,
           fontSize: 14,
         ),
@@ -115,7 +114,7 @@ class AppTheme {
       chipTheme: ChipThemeData(
         backgroundColor: AppColors.surface,
         selectedColor: AppColors.primary,
-        labelStyle: GoogleFonts.outfit(
+        labelStyle: const TextStyle(
           fontSize: 13,
           fontWeight: FontWeight.w500,
         ),
@@ -127,7 +126,7 @@ class AppTheme {
       ),
       snackBarTheme: SnackBarThemeData(
         backgroundColor: AppColors.cardBg,
-        contentTextStyle: GoogleFonts.outfit(color: AppColors.textPrimary),
+        contentTextStyle: const TextStyle(color: AppColors.textPrimary),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
         behavior: SnackBarBehavior.floating,
       ),
